@@ -1,4 +1,4 @@
-// Created by Crowbar 0.34.0.0
+// Created by Crowbar 0.27.0.0
 
 $ModelName "weapons/c_models/c_medic_animations.mdl"
 
@@ -230,6 +230,7 @@ $Sequence "bs_draw" {
 	fadein 0.2
 	fadeout 0.2
 	node "raised"
+	snap
 	fps 30
 }
 
@@ -273,6 +274,7 @@ $Sequence "sg_draw" {
 	fadein 0.2
 	fadeout 0.2
 	node "raised"
+	snap
 	fps 30
 }
 
@@ -328,6 +330,7 @@ $Sequence "draw" {
 	fadein 0.2
 	fadeout 0.2
 	node "raised"
+	snap
 	fps 30
 }
 
@@ -456,6 +459,7 @@ $Sequence "primary_inspect_start" {
 	activity "ACT_PRIMARY_VM_INSPECT_START" 1
 	fadein 0.2
 	fadeout 0.2
+	snap
 	fps 30
 }
 

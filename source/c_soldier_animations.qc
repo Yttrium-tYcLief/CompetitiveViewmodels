@@ -1,4 +1,4 @@
-// Created by Crowbar 0.34.0.0
+// Created by Crowbar 0.27.0.0
 
 $ModelName "weapons/c_models/c_soldier_animations.mdl"
 
@@ -800,7 +800,7 @@ $Sequence "primary_inspect_end" {
 	{ event 5004 58 "WeaponInspect.Movement2" }
 	{ event 5004 130 "WeaponInspect.Movement3" }
 	fadein 0.2
-	fadeout 0.2
+	fadeout 0
 	fps 30
 }
 
@@ -830,7 +830,7 @@ $Sequence "primary_alt1_inspect_end" {
 	{ event 5004 58 "WeaponInspect.Movement2" }
 	{ event 5004 130 "WeaponInspect.Movement3" }
 	fadein 0.2
-	fadeout 0.2
+	fadeout 0
 	fps 30
 }
 
@@ -839,6 +839,7 @@ $Sequence "item1_inspect_start" {
 	activity "ACT_ITEM1_VM_INSPECT_START" 1
 	fadein 0.2
 	fadeout 0.2
+	snap
 	fps 30
 }
 
@@ -855,8 +856,7 @@ $Sequence "item1_inspect_end" {
 	"c_soldier_animations_anims\item1_inspect_end.smd"
 	activity "ACT_ITEM1_VM_INSPECT_END" 1
 	fadein 0.2
-	fadeout 0.2
-	snap
+	fadeout 0
 	fps 30
 }
 
@@ -882,7 +882,7 @@ $Sequence "melee_inspect_end" {
 	"c_soldier_animations_anims\melee_inspect_end.smd"
 	activity "ACT_MELEE_VM_INSPECT_END" 1
 	fadein 0.2
-	fadeout 0.2
+	fadeout 0
 	fps 30
 }
 
@@ -991,6 +991,7 @@ $Sequence "item2_inspect_start" {
 	activity "ACT_ITEM2_VM_INSPECT_START" 1
 	fadein 0.2
 	fadeout 0.2
+	snap
 	fps 30
 }
 
@@ -1007,7 +1008,7 @@ $Sequence "item2_inspect_end" {
 	"c_soldier_animations_anims\item2_inspect_end.smd"
 	activity "ACT_ITEM2_VM_INSPECT_END" 1
 	fadein 0.2
-	fadeout 0.2
+	fadeout 0
 	fps 30
 }
 

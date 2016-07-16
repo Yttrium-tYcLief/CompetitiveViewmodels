@@ -1,4 +1,4 @@
-// Created by Crowbar 0.34.0.0
+// Created by Crowbar 0.27.0.0
 
 $ModelName "weapons\c_models\c_engineer_animations.mdl"
 

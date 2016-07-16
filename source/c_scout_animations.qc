@@ -1,4 +1,4 @@
-// Created by Crowbar 0.34.0.0
+// Created by Crowbar 0.27.0.0
 
 $ModelName "weapons/c_models/c_scout_animations.mdl"
 
@@ -437,6 +437,7 @@ $Sequence "ss_idle" {
 	fadein 0.2
 	fadeout 0.2
 	fps 30
+	snap
 	loop
 }
 
@@ -748,6 +749,7 @@ $Sequence "primary_inspect_start" {
 	{ event 5004 1 "WeaponInspect.Movement4" }
 	fadein 0.2
 	fadeout 0.2
+	snap
 	fps 35
 }
 
@@ -766,7 +768,7 @@ $Sequence "primary_inspect_end" {
 	{ event 5004 4 "WeaponInspect.Movement3" }
 	{ event 5004 70 "WeaponInspect.Movement2" }
 	fadein 0.2
-	fadeout 0.2
+	fadeout 0
 	snap
 	fps 30
 }
@@ -796,7 +798,7 @@ $Sequence "item2_inspect_end" {
 	{ event 5004 4 "WeaponInspect.Movement3" }
 	{ event 5004 70 "WeaponInspect.Movement2" }
 	fadein 0.2
-	fadeout 0.2
+	fadeout 0
 	snap
 	fps 30
 }
@@ -808,6 +810,7 @@ $Sequence "secondary_inspect_start" {
 	{ event 5004 20 "Weapon_Pistol.ReloadScout" }
 	fadein 0.2
 	fadeout 0.2
+	snap
 	fps 30
 }
 
@@ -827,7 +830,7 @@ $Sequence "secondary_inspect_end" {
 	{ event 5004 33 "WeaponInspect.Movement3" }
 	{ event 5004 67 "WeaponInspect.Movement2" }
 	fadein 0.2
-	fadeout 0.2
+	fadeout 0
 	snap
 	fps 30
 }
@@ -838,6 +841,7 @@ $Sequence "melee_inspect_start" {
 	{ event 5004 0 "WeaponInspect.Movement2" }
 	fadein 0.2
 	fadeout 0.2
+	snap
 	fps 30
 }
 
@@ -859,7 +863,7 @@ $Sequence "melee_inspect_end" {
 	{ event 5004 111 "Weapon_Bat.DrawSwoosh1" }
 	{ event 5004 115 "Weapon_Bat.DrawCatch" }
 	fadein 0.2
-	fadeout 0.2
+	fadeout 0
 	snap
 	fps 30
 }
@@ -969,8 +973,8 @@ $Sequence "ss_alt_fire" {
 	"c_scout_animations_anims\ss_alt_fire.smd"
 	activity "ACT_SECONDARY_VM_ALTATTACK" 1
 	{ event 5004 5 "Player.ScoutShove" }
-	fadein 0.0
-	fadeout 0.0
+	fadein 0.2
+	fadeout 0
 	snap
 	fps 30
 }
